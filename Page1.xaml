@@ -9,7 +9,7 @@
       Title="Page1">
 
     <Grid>
-        <DataGrid x:Name="FirstGrid"/>
+        <DataGrid x:Name="FirstGrid" SelectionChanged="FirstGrid_SelectionChanged"/>
         <StackPanel VerticalAlignment="Bottom" Margin="30">
             <TextBox x:Name="name" Margin="5" Text="Название"/>
             <TextBox x:Name="address" Margin="5" Text="Адрес"/>

@@ -66,5 +66,22 @@ namespace _1PractPractika
 
             
         }
+
+        private void FirstGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (FirstGrid.SelectedItem as DataRowView != null)
+            {
+                object name1 = (FirstGrid.SelectedItem as DataRowView).Row[1];
+                object address2 = (FirstGrid.SelectedItem as DataRowView).Row[2];
+                object data = (FirstGrid.SelectedItem as DataRowView).Row[3];
+                name.Text = name1.ToString();
+                address.Text = address2.ToString();
+                established_date.Text = data.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Незя на пустое тыкать");
+            }
+        }
     }
 }

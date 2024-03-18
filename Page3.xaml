@@ -10,7 +10,7 @@
       Title="Page3">
 
     <Grid>
-        <DataGrid x:Name="thirdGrid" Grid.Row="1"/>
+        <DataGrid x:Name="thirdGrid" Grid.Row="1" SelectionChanged="thirdGrid_SelectionChanged"/>
         <StackPanel VerticalAlignment="Bottom" Margin="30">
             <TextBox x:Name="name" Margin="5" Text="Дата"/>
             <ComboBox x:Name="Rab" Margin="5" SelectionChanged="Rab_SelectionChanged"/>

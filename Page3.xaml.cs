@@ -86,6 +86,21 @@ namespace _1PractPractika
 
         private void Rab_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
+        }
+
+        private void thirdGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (thirdGrid.SelectedItem as DataRowView != null)
+            {
+                object namegrid = (thirdGrid.SelectedItem as DataRowView).Row[1];
+
+                name.Text = namegrid.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Незя на пустое тыкать");
+            }
 
         }
     }

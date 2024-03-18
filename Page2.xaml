@@ -9,7 +9,7 @@
       Title="Page2">
 
     <Grid>
-        <DataGrid x:Name="SecondGrid"/>
+        <DataGrid x:Name="SecondGrid" SelectionChanged="SecondGrid_SelectionChanged"/>
         <StackPanel VerticalAlignment="Bottom" Margin="30">
             <TextBox x:Name="name" Margin="5" Text="Имя"/>
             <TextBox x:Name="secondname" Margin="5" Text="Фамилия"/>

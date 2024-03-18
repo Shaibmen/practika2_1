@@ -77,5 +77,22 @@ namespace _1PractPractika
         {
 
         }
+
+        private void SecondGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (SecondGrid.SelectedItem as DataRowView != null)
+            {
+                object name1 = (SecondGrid.SelectedItem as DataRowView).Row[1];
+                object secondname2 = (SecondGrid.SelectedItem as DataRowView).Row[2];
+                object middlename3 = (SecondGrid.SelectedItem as DataRowView).Row[3];
+                name.Text = name1.ToString();
+                secondname.Text = secondname2.ToString();
+                middlename.Text = middlename3.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Незя на пустое тыкать");
+            }
+        }
     }
 }
